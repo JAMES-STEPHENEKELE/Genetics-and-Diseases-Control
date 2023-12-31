@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> DropDown Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="nav-left">
+      <h1>Genetics & Diseases</h1>
+    </div>
+    <div class="nav-right">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li class="services" id="dropdown">
+          <a href="#diseases">Diseases <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="toggle">
+            <li><a href="#" onclick="showCard('cancer')"> Cancer </a></li>
+            <li><a href="#" onclick="showCard('alzheimer')"> Alzheimer's </a></li>
+            <li><a href="#" onclick="showCard('parkinsons')"> Parkinson's </a></li>
+            <li><a href="#"onclick="showCard('huntingtons')"> Huntington's</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="cancer" hidden>
+      <h2>Cancer</h2>
+      <p>Some gene variants, or mutations, are linked with cancer. These include mutations in the specific types of genes below.
+
+Tumor suppressor genes. Genes that protect against cancer are called tumor suppressor genes. They normally limit how much a cell can grow. They do this by:
+
+Controlling how fast cells divide to make new cells
+
+Fixing mistakes in DNA
+
+Controlling when a cell dies
+
+Variants in a tumor suppressor gene can allow cells to grow out of control. These cells can eventually form a tumor.
+
+Some tumor suppressor genes are BRCA1, BRCA2, and p53 or TP53. If a mutation in the BRCA1 or BRCA2 genes is passed down from your parents, you have a greater risk of hereditary breast, ovarian, pancreatic, and prostate cancer. Mutations in these genes also raise the risk of melanoma.
+
+The most common tumor suppressor gene that mutates in people with cancer is p53 or TP53. This gene is missing or damaged in more than half of all cancers. Inherited p53 mutations are rare. If you have one, you have a greater risk of many different types of cancer.
+
+Oncogenes. Mutations in certain genes can turn a healthy cell into a cancer cell. These mutations are not known to be inherited.
+
+Two common oncogenes are:
+
+HER2. This gene makes a protein that controls cancer growth. It is found in some cancer cells, such as some breast and ovarian cancer cells. If a breast cancer is "HER2 negative," it means the HER2 gene is not making this needed protein.
+
+The RAS family of genes. These genes make proteins that help cells communicate with each other, grow normally, and die when they are supposed to. Mutations in these genes can turn healthy cells into cancer cells.
+
+DNA repair genes. DNA repair genes fix mistakes that happen when your DNA is copied. DNA copying happens when cells divide normally to make new cells. Many DNA repair genes work like tumor suppressor genes do. They limit how much the cell can grow. BRCA1, BRCA2, and p53 are all DNA repair genes.
+
+If one of your DNA repair genes has a mutation, mistakes in DNA do not get corrected. This means mutations can develop, and eventually lead to cancer. This is especially true if the mutation is in a tumor suppressor gene or an oncogene.
+
+You can inherit a mutation in a DNA repair gene, or it can happen on its own over your lifetime. Lynch syndrome is caused by an inherited DNA repair mutation. Mutations in BRCA1, BRCA2, and p53 are inherited too.</p>
+    </div>
+
+    <div id="alzheimer" hidden>
+      <h2>Alzheimer's</h2>
+      <p>In 2010, we knew of just 10 genetic areas associated with Alzheimer’s. Today, thanks in large part to the work of NIH-funded researchers, we know of at least 80 genetic areas associated with this disease. Understanding which genes play a role — and what role they play — may help identify new methods to prevent, delay, or treat dementia.
+
+One well-known gene that influences Alzheimer’s risk is the apolipoprotein E (APOE) gene. The APOE gene is involved in making a protein that helps carry cholesterol and other types of fat in the bloodstream. Problems in this process are thought to contribute to the development of Alzheimer’s. APOE comes in several forms, called alleles (e.g., ε2, ε3).
+
+APOE ε2 may provide some protection against the disease. If Alzheimer’s occurs in a person with this allele, it usually develops later in life than it would in someone with the APOE ε4 gene. Roughly 5% to 10% of people have this allele.
+APOE ε3, the most common allele, is believed to have a neutral effect on the disease — neither decreasing nor increasing risk of Alzheimer’s.
+APOE ε4 increases risk for Alzheimer’s and is associated with an earlier age of disease onset in certain populations. About 15% to 25% of people have this allele, and 2% to 5% carry two copies.
+Each person inherits two APOE alleles, one from each biological parent, meaning people can have one of six possible combinations: 2/2, 2/3, 2/4, 3/3, 3/4, and 4/4. Having two copies of APOE ε4 is associated with a higher risk of Alzheimer’s than having one copy. While inheriting APOE ε4 increases a person’s risk of Alzheimer’s, some people with an APOE ε4 allele never develop the disease.
+
+Researchers are also finding other rare genetic variants, in addition to APOE ε2, that appear to provide some protection against developing Alzheimer’s.
+
+However, prevalence and risk associated with APOE and other genetic variants may not be the same across all population groups. Research suggests that the degree of risk may be affected by genetic ancestry — the global geographic region from which a person is biologically descended — and differ among people of African, Asian, American Indian, and European descent. More research is needed to better understand how certain genetic variants might affect a person’s or group’s risk for Alzheimer’s and to identify treatment and prevention strategies that will work best for that particular group.</p>
+    </div>
+
+    <div id="parkinsons" hidden>
+      <h2>Parkinson's</h2>
+      <p>There’s a long list of genes known to contribute to Parkinson’s, and there may be many more yet to be discovered. Here are some of the main players:
+
+SNCA: SNCA makes the protein alpha-synuclein. In brain cells of individuals with Parkinson’s disease, this protein gathers in clumps called Lewy bodies. Mutations in the SNCA gene occur in early-onset Parkinson’s disease.
+
+PARK2: The PARK2 gene makes the protein parkin, which normally helps cells break down and recycle proteins.
+
+PARK7: Mutations in this gene cause a rare form of early-onset Parkinson’s disease. The PARK7 gene makes the protein DJ-1, which protects against mitochondrial stress.
+
+PINK1: The protein made by PINK1 is a protein kinase that protects mitochondria (structures inside cells) from stress. PINK1 mutations occur in early-onset Parkinson’s disease.
+
+LRRK2: The protein made by LRRK2 is also a protein kinase. Mutations in the LRRK2 gene have been linked to late-onset Parkinson’s disease.
+
+Among inherited cases of Parkinson’s, the inheritance patterns differ depending on the genes involved. If the LRRK2 or SNCA genes are involved, Parkinson’s is likely inherited from just one parent. That’s called an autosomal dominant pattern, which is when you only need one copy of a gene to be altered for the disorder to happen.
+
+If the PARK2, PARK7 or PINK1 gene is involved, it’s typically in an autosomal recessive pattern, which is when you need two copies of the gene altered for the disorder to happen. That means that two copies of the gene in each cell have been altered. Both parents passed on the altered gene but may not have had any signs of Parkinson’s disease themselves.</p>
+    </div>
+
+    <div id="huntingtons" hidden>
+      <h2>Huntington's</h2>
+      <p>
+When the huntingtin gene is faulty, the huntingtin protein it produces repeats certain genetic sequences known as CAG (cytosine-adenine-guanine) too many times. This in turn appears to damage neurons in certain areas of the brain - although how and why this happens is not yet fully understood.
+
+A normal CAG repeat is between 10 and 26. Usually one of your CAG repeats will be in this region (unless you inherited it from both parents although this is very rare). If one of your CAG repeats is over 40, this means that you will go on to develop Huntington's disease at some stage.
+
+Where it gets a little more complicated is the intermediate allele and reduced penetrance, but you can find out a little more about these on the tested positive and tested negative pages.</p>
+    </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
+
+

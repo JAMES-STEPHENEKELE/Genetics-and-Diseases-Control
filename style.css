@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background: url("https://www.thoughtco.com/thmb/dj4nerFEPPv_pE3D-TRLYo_b-a0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/3-D_DNA-56a09ae45f9b58eba4b20266.jpg") center center;
+}
+
+.navbar {
+    background-color: rgb(11, 18, 54);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-left h1 {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-right ul li {
+    list-style: none;
+}
+
+.nav-right ul li a, #search, .card {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services {
+    position: relative;
+    transition: all .5s;
+
+}
+
+#btn-search {
+  padding: 0px 5px;
+  text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-right .toggle {
+    display: none;
+    transition: all .5s linear;
+}
+
+.toggle.active {
+    display: flex;
+    position: absolute;
+    width: 30rem;
+    top: 100%;
+    left: 0;
+    margin-top: 1rem;
+    background-color: rgb(11, 18, 54);
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all .5s linear;
+}
+
+.toggle li {
+    margin: 1rem 0;
+}
+
+.toggle li a {
+    font-size: 1.1rem;
+}
+
+#bg-img {
+  z-index: -1;
+}
+
+.card {
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgb(11, 18, 54);
+  width: 50%;
+  padding: 0px 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin: auto;
+}
+
+.card h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card p {
+  margin: 5px 20px 20px 20px;
+}
